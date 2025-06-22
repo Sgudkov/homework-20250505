@@ -1,12 +1,10 @@
-import numpy as np
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import SGDClassifier
-from sklearn.metrics import accuracy_score, log_loss
+from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
 
 from classifiers.logistic_regression import LogisticRegression
-from dmia.gradient_check import *
 
 if __name__ == "__main__":
     train_df = pd.read_csv("./data/train.csv")
